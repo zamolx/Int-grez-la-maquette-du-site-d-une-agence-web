@@ -1,0 +1,611 @@
+/* Polices */
+
+@font-face {
+  font-family: 'robotoregular';
+  src: url('font/Roboto-Regular-webfont.eot');
+  src: url('font/Roboto-Regular-webfont.eot?#iefix') format('embedded-opentype'), url('font/Roboto-Regular-webfont.woff2') format('woff2'), url('font/Roboto-Regular-webfont.woff') format('woff'), url('font/Roboto-Regular-webfont.ttf') format('truetype'), url('font/Roboto-Regular-webfont.svg#robotoregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'robotobold';
+  src: url('font/Roboto-Bold-webfont.eot');
+  src: url('font/Roboto-Bold-webfont.eot?#iefix') format('embedded-opentype'), url('font/Roboto-Bold-webfont.woff2') format('woff2'), url('font/Roboto-Bold-webfont.woff') format('woff'), url('font/Roboto-Bold-webfont.ttf') format('truetype'), url('font/Roboto-Bold-webfont.svg#robotobold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'robotomedium';
+  src: url('font/Roboto-Medium-webfont.eot');
+  src: url('font/Roboto-Medium-webfont.eot?#iefix') format('embedded-opentype'), url('font/Roboto-Medium-webfont.woff2') format('woff2'), url('font/Roboto-Medium-webfont.woff') format('woff'), url('font/Roboto-Medium-webfont.ttf') format('truetype'), url('font/Roboto-Medium-webfont.svg#robotomedium') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'robotoblack';
+  src: url('font/Roboto-Black-webfont.eot');
+  src: url('font/Roboto-Black-webfont.eot?#iefix') format('embedded-opentype'), url('font/Roboto-Black-webfont.woff2') format('woff2'), url('font/Roboto-Black-webfont.woff') format('woff'), url('font/Roboto-Black-webfont.ttf') format('truetype'), url('font/Roboto-Black-webfont.svg#robotoblack') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+html,body {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+  font-family: 'robotoregular',Arial, serif;
+}
+/*----------------Header-----------------*/
+header {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+	}
+.nav {
+	text-align: left;
+	height: 70px;
+	line-height: 70px;
+    margin-right: 8%;
+}
+#logo {
+    margin-left: 10%;
+}
+.menu {
+	margin: 0 10px 0 0;
+
+}
+.menu a {
+	clear: right;
+	text-decoration: none;
+	color: gray;
+	margin:0 10px;
+	line-height: 70px;
+}
+.menu a:hover {
+	border-top:  3px solid #59bdff;
+    padding-top: 10px;
+}
+label{
+	margin: 0 40px 0;
+	font-size: 26px;
+	line-height: 70px;
+	display: none;
+	width: 26px;
+	float: right;
+}
+#toggle {
+	display: none;
+}
+/* ----------slider----------------*/
+#slider{
+      overflow: hidden;
+      margin-right:5px;
+      position: relative;
+      margin-top: 8px;
+    margin-left: 5px;
+    }
+    #slider figure {
+      position: relative;
+      width: 200%;
+      margin: 0;
+      left: 0;
+      animation:  slider 8s linear alternate infinite;
+    }
+    #slider figure img {
+      float: left;
+      width: 50%;
+    }
+    @keyframes slider {
+      0% {
+        left: 0;
+      }
+      50% {
+        left: -100%;
+      }
+    }
+    .text-block {
+      position:absolute;
+      bottom: 35%;
+      left: 2%;
+font-size: 1vw;
+font-family: 'robotomedium';
+    }
+.bouton_infos {
+  width: 110px;
+  height: 35px;
+  margin-top: 3px;
+  text-decoration: none;
+  display: block;
+  background: #59bdff;
+  color: white;
+  line-height: 35px;
+  text-align: center;
+}
+.mi {
+    color:white;
+}
+strong {
+    color:#59bdff;
+}
+/* ------------ Règles communes de la section Services et Projets ------------ */
+
+.fa-circle {
+  position: relative;
+  bottom: 17px;
+  color: #59bdff;
+}
+hr {
+  width: 150px;
+  border: 1px solid #ebebeb;
+}
+.introducere h2 {
+ margin: 1%;
+  color: black;
+  font-size: 2.4vw;
+  font-family: 'robotoregular';
+}
+.introducere p {
+  margin: 0.1%;
+  font-size: 1.1em;
+font-family: 'robotoblack'
+}
+.introducere {
+  padding: 10px;
+    text-align: center;
+}
+
+/* ------------ Services ------------*/
+
+#services {
+  top: 8%;
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.description {
+  display: flex;
+  flex-wrap: wrap-reverse;
+    margin-top: 10px;
+  padding: 20px;
+  justify-content: space-around;
+}
+.ecran {
+    margin-top: 20px;
+  width: 510px;
+  height: 319px;
+}
+.description h3 {
+  color: black;
+}
+.services_list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 510px;
+  height: 319px;
+  text-align:left;
+}
+.design {
+  font-family: 'robotomedium';
+    position: relative;
+  display: flex;
+    flex-direction: column;
+ height: 20px;
+}
+
+.design h3 {
+  margin: 2px;
+}
+.design p {
+  margin: 2px;
+  font-size: 1em;
+}
+.icones {
+  position: relative;
+    right: 17%;
+  bottom: 65px;
+  color: #59bdff;
+}
+.fa-line-chart, .fa-cubes {
+  font-size: 1.7em;
+  padding: 15px;
+  border: 2px solid #ebebeb;
+  border-radius: 80%;
+}
+.fa-pie-chart {
+    font-size: 1.7em;
+  padding: 18px;
+  border: 2px solid #ebebeb;
+  border-radius: 80%; 
+}
+.icones .fa-circle {
+  position: relative;
+  bottom: 40px;
+  left: 58px;
+  border: 4px solid white;
+  font-size: 0.8em;
+}
+
+/* ------------ Projets ------------ */
+
+
+#projects {
+  margin-top: 1%;
+  width: 100%;
+  padding-top: 10px;
+  background-color: rgb(245, 245, 245);
+}
+.menu_projects {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
+}
+
+.menu_projects ul {
+  display: flex;
+  width: 360px;
+  padding: 0;
+    text-align: center;
+  list-style-type: none;
+  border-radius: 5px;
+  font-size: 0.93em;
+  background-color: rgb(229, 229, 229);
+}
+.menu_projects li {
+  width: 90px;
+  height: 40px;
+  margin: 0;
+}
+.menu_projects a {
+  display: block;
+  text-decoration: none;
+  color: grey;
+  line-height: 40px;
+}
+span {
+  color: white;
+}
+.menu_projects li:first-child {
+  background-color: #59bdff;
+   border-bottom: 3px solid #59bdff;
+  border-radius: 5px;
+}
+a> .fa-caret-down {
+  visibility: hidden;
+}
+.fa-caret-down {
+ /* visibility: hidden;*/
+  position: relative;
+    top: -15px;
+  color: rgb(52, 145, 178);
+  font-size: 1.2em;
+}
+.menu_projects a:hover {
+  width: 100%;
+  height: 100%;
+  background-color: #59bdff;
+  color: white;
+  border-bottom: 3px solid #59bdff;
+  border-radius: 5px;
+}
+
+.menu_projects a:hover .fa-caret-down {
+  visibility: visible;
+}
+.portfolio {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 20px;
+  margin-right: 12%;
+  margin-left: 12%;
+}
+
+.img_portfolio {
+  margin: 20px;
+  height: 166px;
+}
+.img_portfolio img {
+  width: 250px;
+}
+
+.legende {
+  visibility: hidden;
+  width: 250px;
+  height: 70px;
+  position: relative;
+  bottom: 44%;
+  text-align: left;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+}
+.legende h4 {
+  font-size: 1.4em;
+}
+.legende p {
+  font-size: 0.9em;
+}
+figure:hover figcaption {
+  visibility: visible;
+}
+
+.img_portfolio h4 {
+  margin: 0;
+  padding: 15px 15px 5px 15px;
+}
+
+.img_portfolio p {
+  height: 54px;
+  margin: 0;
+  padding: 0px 15px 0 15px;
+}
+.fa-eye {
+  position: relative;
+  bottom: 110px;
+  left: 80%;
+  padding: 8px;
+  border: 2px solid white;
+  border-radius: 50%;
+  background-color: rgb(100, 163, 200);
+ 
+}
+/* ------------ Contact ------------ */
+#contact {
+  position: relative;
+  height: 560px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+}
+
+#contact iframe {
+  width: 100%;
+}
+
+.formulaire {
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  height: 560px;
+  background-color: rgba(92, 173, 211,0.2);
+}
+.champs {
+  width: 294px;
+  height: 400px;
+  margin-right: 10%;
+  padding: 12px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 0;
+}
+.champs h2 {
+  color: black;
+  margin: 6px;
+  font-size: 1.3em;
+  font-family: 'robotomedium';
+}
+.champs p {
+  font-size: 0.8em;
+  margin: 8px;
+  font-family: 'robotomedium';
+}
+
+.champs input, textarea {
+  width: 85%;
+  margin: 6px;
+  padding: 5px;
+  border: 1px solid rgb(220, 220, 220);
+  border-radius: 4px;
+  color: rgb(105, 105, 105);
+  font-size: 0.8em;
+  font-family: 'robotomedium';
+}
+
+#envoyer {
+  width: 45%;
+  border: 1px solid rgb(92, 173, 211);
+  border-bottom: 3px solid rgb(52, 145, 178);
+  border-radius: 4px;
+  background: #59bdff;
+  color: white;
+}
+
+/*----------------@media screen and (min-width: 391px) and (max-width: 760px)----------*/
+
+@media screen and (min-width: 391px) and (max-width: 760px){
+	label{
+		display: block;
+		cursor: pointer;
+	}
+    .nav {
+        margin-right: 0%;
+    }
+    #logo {
+        margin-left: 0%;
+    }
+	.menu {
+		text-align: center;
+		width: 100%;
+		display: none;
+        background:#59bdff; 
+	}
+	.menu a:hover {
+		border-top: 0px;
+		padding-top: 0px;
+		background: grey;
+	}
+    #slider{
+        z-index: -1;
+    }
+    .introducere,.description {
+        z-index: -1;
+    }
+    .introducere p {
+  font-size: 0.8em;
+}
+.design h3 {
+  font-size: 0.8em;
+}
+.design p {
+  font-size: 0.7em;
+}
+	.menu a {
+		color: black;
+		display: block;
+		border-top: 1px solid #EAEAEB;
+		border-bottom: 1px solid #EAEAEB;
+		margin: 0;
+	}
+	#toggle:checked +.menu {
+		display: block;
+	}
+    .description {
+        margin-left: 12%;
+    }
+    .design h3{
+        margin-left: 8%;
+    }
+    .design p {
+        margin-left: 8%
+    }
+    .icones {
+        float: right;
+    }
+    .bouton_infos{
+        visibility: hidden;
+    }
+   .ecran {
+  width: 380px;
+  height: 250px;
+}
+    figure:hover figcaption {
+  visibility: hidden;
+}
+    #contact {
+  position: relative;
+  height: 560px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+}
+
+    .formulaire {
+        height: 500px;
+        width: 100%;
+        position: relative;
+        background: grey;
+  justify-content:center;
+    }
+}
+/*----------------@media screen and (max-width: 390px)----------*/
+ @media screen and (max-width: 390px) {
+     header {
+    flex-direction: column;
+  }
+      #logo {
+        margin-left: 0%;
+    }
+  label{
+    display: block;
+    cursor: pointer;
+  }
+     .text-block {
+      display: none;
+    }
+    .nav {
+        margin-right: 0%;
+    }
+    #logo {
+        margin-left: 0%;
+    }
+  .menu {
+    text-align: center;
+    width: 100%;
+    display: none;
+        background:#59bdff; 
+  }
+  .menu a:hover {
+    border-top: 0px;
+    padding-top: 0px;
+    background: grey;
+  }
+    #slider{
+        z-index: -1;
+    }
+    .description {
+      display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+    }
+      .introducere,.description {
+        z-index: -1;
+    }
+     .design {
+         text-align: center;
+     }
+     .introducere p {
+  font-size: 0.8em;
+}
+.design h3 {
+  font-size: 0.8em;
+}
+.design p {
+  font-size: 0.7em;
+}
+  .menu a {
+    color: black;
+    display: block;
+    border-top: 1px solid #EAEAEB;
+    border-bottom: 1px solid #EAEAEB;
+    margin: 0;
+  }
+  #toggle:checked +.menu {
+    display: block;
+  }
+      .icones {
+        display: none;
+    }
+     .ecran {
+         display: none;
+     }
+     .bouton_infos{
+        visibility: hidden;
+    }
+    figure:hover figcaption {
+  visibility: hidden;
+}
+.menu_projects ul {
+  flex-direction: column;
+}
+.menu_projects li {
+  margin-left: 40%;
+}
+.menu_projects a {
+  align-content: center;
+
+}
+    #contact {
+  position: relative;
+  height: 560px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+}
+
+    .formulaire {
+        height: 500px;
+        width: 100%;
+        position: relative;
+  justify-content:center;
+    }
+    }
